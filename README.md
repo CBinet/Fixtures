@@ -84,7 +84,7 @@ int value = myClass.MyInteger; // value = 42
 Here is the index of currently supported types. If the type is not supported, the property will be set to the default value of the type.
 
 ### Basic types :
-- [string] (https://msdn.microsoft.com/en-us/library/system.string)
+[string](https://msdn.microsoft.com/en-us/library/system.string)
 - [bool] (https://msdn.microsoft.com/en-us/library/system.boolean)
 - [object] (https://msdn.microsoft.com/en-us/library/system.object)
 - [char] (https://msdn.microsoft.com/en-us/library/system.char)
