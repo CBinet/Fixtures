@@ -45,16 +45,18 @@ fixture.AddManyTo(list, 5);
 int count = list.Count; // count = 5
 ```
 
-### **Build**,  **With** and **Do**
+### **Build**,  **With**, **Without** and **Do**
 You can also customize a fixture on creation using the **Fixture.Build** with the  **FixtureDefinition.With** and **FixtureDefinition.Do** methods :
 
 ```cs
-// Notice the .Create at the end
+// With
 ICollection random = fixture.Build<MyClass>().With(c => c.MyString, "Hello world").Create();
-// You can mix .With and .Do
+// Without
+ICollection random = fixture.Build<MyClass>().Without(c => c.MyString).Create();
+// Do
+ICollection random = fixture.Build<MyClass>().Do(c => c.MyList.Clear()).Create();
+// You can mix .With, .Without and .Do
 ICollection random = fixture.Build<MyClass>().With(c => c.MyString, "Hello world").Do(c => c.MyList.Clear()).Create();
-// You can chain .With and .Do as much as you want
-ICollection random = fixture.Build<MyClass>().With(c => c.MyString, "Hello world").Do(c => c.MyList.Clear()).With(c => c.MyInteger, 42).Create();
 ```
 
 ### **Register**
