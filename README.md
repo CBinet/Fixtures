@@ -11,7 +11,7 @@ PM> Install-Package BetaSoftwares.Fixture
 
 ## **Usage**
 <br>
-To start using **BetaSoftwares.Fixture** you will first need to create an instance of the Fixture class :
+To start using **BetaSoftwares.Fixture**, you will first need to create an instance of the Fixture class :
 
 ```cs
 using BetaSoftwares.Fixtures
