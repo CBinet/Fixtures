@@ -14,7 +14,7 @@ PM> Install-Package BetaSoftwares.Fixture
 To start using **BetaSoftwares.Fixture**, you will first need to create an instance of the Fixture class :
 
 ```cs
-using BetaSoftwares.Fixtures
+using BetaSoftwares.Fixtures;
 
 Fixture fixture = new Fixture();
 ```
